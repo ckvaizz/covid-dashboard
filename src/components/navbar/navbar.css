@@ -1,0 +1,9 @@
+.outer-nav{
+    height: 15vh;
+    width: 100%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+}
