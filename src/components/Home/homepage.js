@@ -16,6 +16,8 @@ const Homepage = () => {
         
            </div>
            <div className="H-dailyUpdate">
+        <div >
+
 
            </div>
            <div className="H-btn">
