@@ -1,9 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 .outer-nav{
-    height: 15vh;
+    height: 13vh;
     width: 100%;
-    background-color: transparent;
+    background-color:transparent;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: fixed;
+
+}
+
+.inner-nav{
+    height: 12vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    display: flex;
+   justify-content:space-around;
+}
+.inner-nav:hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.inner-nav>h1{
+    margin-top: 17px;
+   font-size: 2.2rem;
+   font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.inner-nav>h1::first-letter{
+    color: red;
+    font-size: 2.8rem;
+}
+
+.inner-nav>h3{
+ margin-top: 29px;
+ font-size: 1.5rem;
+font-weight: 200;
+
+ 
 }
