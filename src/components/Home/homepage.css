@@ -1,0 +1,71 @@
+.H-main{
+    height: 73vh;
+    position: relative;
+    width: 100%;
+    background-color: rgb(255, 252, 251);
+    top: 13vh;
+}
+.H-img{
+    position: absolute;
+    height: 20rem;
+    width: 45rem;
+    background-color:rgb(255, 255, 255);
+    top: 20px;
+    left: 6%;
+    padding: 5px;
+    display: flex;
+    
+}
+.H-img>img{
+    height: 20rem;
+    
+}
+.H-img-text{
+   height: 20rem;
+   background-color: rgb(252, 252, 252);
+   width: 100%;
+  
+}
+.H-img-text>h1{
+    font-size:4.3rem ;
+    margin-top: 10px;
+    padding-top: 30px;
+    color: rgb(17, 16, 16);
+    text-shadow:  2px 4px  rgba(0,0,0,0.6);
+    margin-left: 10px;
+}
+.H-img-text>h1::first-letter{
+    color: red;
+}
+
+.H-btn{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    height: 7rem;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+}
+.H-btn>div{
+    height: 60px;
+    width: 220px;
+    background-color: rgb(255, 255, 255);
+    font-size: 2rem;
+   padding: auto;
+  text-align: center;
+  padding: 10px;
+    box-shadow:2px 2px 4px 1px rgba(0,0,0,0.3);
+    font-weight: 545;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    transition: all 1s ;
+}
+.H-btn>div:hover{
+    background:linear-gradient(to left,rgba(255, 0, 0, 0.562),rgba(208, 228, 117, 0.459));
+    box-shadow: 3px 3px 4px 4px rgba(0,0,0,0.6);
+}
+.H-btn>div>p{
+    margin-top: 10px;
+}

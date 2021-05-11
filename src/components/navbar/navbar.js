@@ -11,6 +11,7 @@ const Navbar = () => {
                 <h3>Hospitals</h3>
                 <h3>Ambulance</h3>
             </div>
+            
         </div>
     )
 }
