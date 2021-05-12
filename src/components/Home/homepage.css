@@ -30,12 +30,12 @@
     font-size:4.3rem ;
     margin-top: 10px;
     padding-top: 30px;
-    color: rgb(17, 16, 16);
+    color: rgba(54, 51, 51, 0.979);
     text-shadow:  2px 4px  rgba(0,0,0,0.6);
     margin-left: 10px;
 }
 .H-img-text>h1::first-letter{
-    color: red;
+    color: rgb(233, 58, 15);
 }
 
 .H-btn{
@@ -68,4 +68,178 @@
 }
 .H-btn>div>p{
     margin-top: 10px;
+}
+.H-dailyUpdate{
+    position: absolute;
+    height: 20rem;
+    background-color:transparent;
+    width: 35%;
+    right: 25px;
+    overflow: hidden;
+    transition: all 1s ease;
+
+}
+.H-dailyUpdate:hover{
+    box-shadow: 1px 6px 5px 4px  rgba(0, 0, 0, 0.6);
+}
+.H-selectState{
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 5px 2px 5px  rgba(0,0,0,0.6);
+    transition: all 1s ease;
+    
+}
+
+.H-selectState>span{
+    height: 45px;
+    margin-top:20px ;
+    display: flex;
+    justify-content: center;
+}
+.H-selectState>span>input:focus{
+    outline: 0;
+}
+.H-selectState>span>input{
+    font-weight: 900;
+    text-align: center;
+    margin: 5px;
+    margin-top: 5px;
+    box-shadow: 1px 3px 4px 1px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+.H-selectState>h1{
+    font-size: 1.1rem;
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+.H-selectState>img{
+    height: 90px;
+    width: 294px;
+    margin: auto;
+    margin-top: -10px;
+}
+.div-disable{
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+    transition: all 1s ease;
+}
+.H-districtNews,.H-stateNews{
+   
+    position: absolute;
+    top: 10px;
+    height: 19rem;
+    
+    display: flex;
+    width: 99%;
+    
+}
+.H-disNewsText,.H-stateNewsText{
+    width: 100%;
+   text-align: center;
+   height: fit-content;
+   padding: 10px;
+}
+.H-disNewsText>h1,.H-stateNewsText>h1{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: underline;
+    
+    margin: auto;
+}
+.H-disNewsText>h5,.H-stateNewsText>h5{
+    font-size:1.3rem ;
+    text-align: center;
+    margin-top: 10px;
+}
+.H-disCards{
+    position: absolute;
+    height: 13em;
+    width: 90%;
+    
+    top: 25%;
+  display: flex;
+  left: 5%;
+  justify-content: space-around;
+}
+.H-disCards>div{
+    height: 12rem;
+    width: 120px ;
+    background-color: rgb(252, 252, 252);
+    margin-top: 10px;
+    border-radius: 7px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, .7);
+    overflow: hidden;
+}
+.H-cardConfirmed>div,.H-cardRecoverd>div,.H-cardDead>div{
+height: 25px;
+
+text-align: center;
+padding: 10px;
+font-weight: 700;
+}
+.H-cardConfirmed>div{
+    background-color: yellow;
+}
+.H-cardRecoverd>div{
+    background-color: yellowgreen;
+}
+.H-cardDead>div{
+    background-color: tomato;
+}
+.H-cardConfirmed>h5,.H-cardRecoverd>h5,.H-cardDead>h5{
+    padding: 5px;
+    text-align: center;
+    margin-top: 20px;
+color: rgb(10, 6, 6);
+overflow-wrap: break-word;
+font-size: 30px;
+}
+.H-dailycase{
+    position: absolute;
+    height: 19rem;
+    width:95%;
+ 
+    top: 5px; display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: center;
+    padding: 10px;
+
+}
+.H-dailycase>h1{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.H-dailycase>div{
+    height: 90px;
+    border:3px solid rgba(112, 112, 161, 0.384);
+    padding: 10px;
+}
+.H-dailystate>h4,.H-dailydistrict>h4{
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.H-dailystate>h5,.H-dailydistrict>h5{
+display:inline-flex;
+margin: 7px;
+font-size: 1.1rem;
+font-weight: 800;
+font-family: monospace;
+}
+
+.H-dailyloading{
+    position: absolute;
+    height: 10rem ;
+    background-color: blueviolet;
+    top: 1px;
 }
