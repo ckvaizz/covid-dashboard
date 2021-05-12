@@ -3,7 +3,7 @@ import './homepage.css';
 import Banner from "../../images/covid3.jpg"
 const Homepage = () => {
     return(
-       <>
+       <div>
        <div className="H-main">
            <div className="H-img">
         <img src={Banner} alt=""/>
@@ -28,7 +28,9 @@ const Homepage = () => {
        
            </div>
            </div>
-       </>
+       </div>
+       </div>
+
     )
 }
 
