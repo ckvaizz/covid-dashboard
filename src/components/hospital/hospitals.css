@@ -2,10 +2,9 @@
     height: 75vh;
     width: 100%;
     background:transparent;
-    position: fixed;
+    position: relative;
     background-size: cover;
-    display: flex;   
-    flex-direction: column;
+    top: 4vh;
     overflow: scroll;
    
 }
@@ -31,7 +30,8 @@
     overflow: scroll;
     left: 50px;
     top: 24%;
-    color: red;
+    background-color: rgba(120, 170, 177, 0.842);
+    color: rgb(5, 5, 5);
     font-weight: 500;
 }
 .hospital-main>select>option{
@@ -43,11 +43,11 @@
 
 .card1-sec1{
     position: absolute;
-    top: 38%;
+    top: 40%;
     left: 50px;
     height: 38vh;
     width: 18vw;
-    background-color: rgb(192, 50, 50);
+    background-color: rgba(36, 79, 85, 0.842);
     border-radius: 0px;
     box-shadow:1px 1px 1px 1px rgba(0,0 , 0, 0.3);
 
@@ -55,7 +55,7 @@
 
 .card1-sec2{
     position: absolute;
-    top: 38%;
+    top: 40%;
     left: 23%;
     height: 38vh;
     width: 20vw;
@@ -115,11 +115,11 @@
 
 .card2-sec1{
     position: absolute;
-    top: 38%;
+    top: 40%;
     left: 55%;
     height: 38vh;
     width: 18vw;
-    background-color: rgb(192, 50, 50);
+    background-color:rgba(36, 79, 85, 0.842);
     border-radius: 0px;
     box-shadow:1px 1px 1px 1px rgba(0,0 , 0, 0.3);
 
@@ -127,7 +127,7 @@
 
 .card2-sec2{
     position: absolute;
-    top: 38%;
+    top: 40%;
     left: 73%;
     height: 38vh;
     width: 20vw;

@@ -15,6 +15,14 @@ const Hospitalpage = () => {
                     <option value="1">kerala</option>
                     <option value="2">Tamilnadu</option>
                     <option value="3">Karnataka</option>
+                    <option value="4">Goa</option>  
+                    <option value="1">kerala</option>
+                    <option value="2">Tamilnadu</option>
+                    <option value="3">Karnataka</option>
+                    <option value="4">Goa</option>
+                    <option value="1">kerala</option>
+                    <option value="2">Tamilnadu</option>
+                    <option value="3">Karnataka</option>
                     <option value="4">Goa</option>
             </select>
             

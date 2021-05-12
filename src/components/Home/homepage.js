@@ -1,7 +1,9 @@
 import React from 'react';
 import './homepage.css';
 import Banner from "../../images/covid3.jpg"
+import {Redirect,useHistory} from 'react-router-dom';
 const Homepage = () => {
+    const history=useHistory()
     return(
        <div>
        <div className="H-main">
@@ -21,8 +23,8 @@ const Homepage = () => {
 
            </div>
            <div className="H-btn">
-           <div className="H-btn-hos"><p>Hospital</p></div>
-           <div className="H-btn-med"><p>Medicine</p></div>
+           <div className="H-btn-hos" onClick={ () => history.push("/hospital")}><p>Hospital</p></div>
+           <div className="H-btn-med" onClick={ () => history.push("/medicine")}><p>Medicine</p></div>
            <div className="H-btn-amb"><p>Ambulance</p></div>
            <div className="H-btn-mr"><p>More</p></div>
        

@@ -1,0 +1,188 @@
+.med-main{
+    height: 85vh;
+    width: 100%;
+    background-color:transparent;
+    position: relative;
+    background-size: cover;
+    overflow: scroll;
+    
+   
+}
+.med-main::-webkit-scrollbar {
+    display: none;
+}
+
+.med-main>select{
+    position: absolute;
+    height: 30px;
+    width: 150px;
+    overflow: scroll;
+    left: 12%;
+    top: 22%;
+    background-color: rgba(233, 236, 236, 0.842);
+    color: rgb(5, 5, 5);
+    font-weight: 500;
+}
+.med-main>select{
+    min-height: 20px;
+    overflow: scroll;
+}
+.med-main>h2{
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.med-main>h2::first-letter{
+    color: red;
+}
+
+
+
+/* card1*/
+
+
+.medi-card1{
+    position: absolute;
+    height: 55vh;
+    width: 20vw;
+    top: 27vh;
+    left: 10%;
+    border-radius: 45%;
+    background-color: transparent;
+    box-shadow:2px 2px 4px 1px rgba(0,0,0,0.8);
+    overflow: hidden;
+}
+
+.top-curve1{
+    height: 26vh;
+    width: 20vw;
+    position: relative;
+    background-color: rgb(207, 13, 13);
+}
+.top-curve1>h2{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.top-curve1>h5{
+    position: absolute;
+    top: 40%;
+    left: 14%;
+    font-size: .6rem;
+    font-weight: 500;
+    color: white;
+}
+
+.medi-card1>h4{
+    padding-top: 5px;
+    margin-left: 70px;
+    font-size: .8rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: red;
+}
+
+/* card2*/
+
+
+.medi-card2{
+    position: absolute;
+    height: 55vh;
+    width: 20vw;
+    top: 27vh;
+    left: 40%;
+    border-radius: 45%;
+    background-color: transparent;
+    box-shadow:2px 2px 4px 1px rgba(0,0,0,0.8);
+    overflow: hidden;
+}
+
+.top-curve2{
+    height: 26vh;
+    width: 20vw;
+    position: relative;
+    background-color: rgb(207, 13, 13);
+}
+.top-curve2>h2{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.top-curve2>h5{
+    position: absolute;
+    top: 40%;
+    left: 14%;
+    font-size: .6rem;
+    font-weight: 500;
+    color: white;
+}
+
+.medi-card2>h4{
+    padding-top: 5px;
+    margin-left: 70px;
+    font-size: .8rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: red;
+}
+
+
+/* card3*/
+
+
+
+.medi-card3{
+    position: absolute;
+    height: 55vh;
+    width: 20vw;
+    top: 27vh;
+    right: 10%;
+    border-radius: 45%;
+    background-color: transparent;
+    box-shadow:2px 2px 4px 1px rgba(0,0,0,0.8);
+    overflow: hidden;
+}
+
+.top-curve3{
+    height: 26vh;
+    width: 20vw;
+    position: relative;
+    background-color: rgb(207, 13, 13);
+}
+.top-curve3>h2{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.top-curve3>h5{
+    position: absolute;
+    top: 40%;
+    left: 14%;
+    font-size: .6rem;
+    font-weight: 500;
+    color: white;
+}
+
+.medi-card3>h4{
+    padding-top: 5px;
+    margin-left: 70px;
+    font-size: .8rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: red;
+}

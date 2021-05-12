@@ -9,6 +9,7 @@ const Footer = () => {
             <h4>Wedsite</h4>
             <h4>Social</h4>
             <h4>About</h4>
+            
 
         </div>
     )
