@@ -129,7 +129,14 @@
     opacity: 0;
     pointer-events: none;
     user-select: none;
-    transition: all 1s ease;
+    transition: all 1s ;
+    animation: 1s toLeft ;
+}
+@keyframes toLeft {
+    to{
+        left: 300px;
+        opacity: 0;
+    }
 }
 .H-districtNews,.H-stateNews{
    
@@ -139,6 +146,7 @@
     
     display: flex;
     width: 99%;
+    transition: all 1s ;
     
 }
 .H-disNewsText,.H-stateNewsText{
@@ -239,7 +247,68 @@ font-family: monospace;
 
 .H-dailyloading{
     position: absolute;
-    height: 10rem ;
-    background-color: blueviolet;
+    height: 15rem ;
+    width: 100%;
+    
     top: 1px;
+    font-size: .8rem;
+    text-align: center;
+}
+.H-dailyloading>h1{
+    width: 290px;
+   margin: auto;
+   margin-top: 20px;
+}
+.H-dailyloading>img{
+    border-radius: 30px;
+    height: 10rem;
+    margin-top:10px ;
+}
+.H-searchreslt{
+    position: absolute;
+    background-color: rgb(245, 241, 248);
+    height: 10rem;
+    width: 170px;
+    top: 19%;
+    left: 12%;
+    z-index: 2;
+    border-radius: 10px;
+    overflow: scroll;
+    border: 2px solid black;
+
+    
+}
+.H-searchreslt::-webkit-scrollbar{
+    display: none;
+}
+.H-searchreslt>h3,.H-searchdistrict>h3{
+    margin: 9px;
+    border-bottom: .8px solid black;
+}
+.H-searchdistrict{
+    position: absolute;
+    background-color: rgb(245, 241, 248);
+    height: 10rem;
+    width: 170px;
+    top: 19%;
+    right: 12%;
+    z-index: 2;
+    border-radius: 10px;
+    overflow: scroll;
+    border: 2px solid black;
+
+
+}
+.H-searchdistrict::-webkit-scrollbar{
+    display: none;
+}
+.H-nextbtn{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    height: 20px;
+   z-index: 2
+   ;
 }

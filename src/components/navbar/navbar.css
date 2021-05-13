@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
    user-select: none;
+   scroll-behavior: smooth;
 }
 .outer-nav{
     height: 13vh;
