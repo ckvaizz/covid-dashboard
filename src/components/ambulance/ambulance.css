@@ -6,7 +6,7 @@
     background-size: cover;
     overflow: scroll;
 }
-.amb-main::-webkit-scrollbar {
+.amb-main::-webkit-scrollbar { 
     display: none;  
 }
 
@@ -57,26 +57,33 @@
 
 
 
-.amb-card1-sec1{
-    position:absolute;
-    height: 20vh;
+.amb-card{
+    position: relative;
+    margin-top: 30%;
+    margin-left: 5%;
+    height: 35vh;
     width: 23vw;
-    background-color:rgba(103, 176, 185, 0.842);
+    background-color:transparent;
     box-shadow:2px 2px 4px 1px rgba(0,0,0,0.8);
-    top: 65%;
-    left: 5%;
-}
-.amb-card1-sec2{
-    position:absolute;
-    height: 15vh;
-    width: 23vw;
-    background-color: transparent;
-    box-shadow:2px 2px 4px 1px rgba(0,0,0,0.8);
-    top: 88.5%;
-    left: 5%;
+    
 }
 
-.amb-card1-sec1>h3{
+.amb-card>h4{
+    position: absolute;
+    margin-top: 0px;
+    font-size: .9rem;
+    font-weight: 500;
+    font-family: sans-serif;
+    margin-left: 3px;
+}
+
+.amb-sec1{
+   
+    height: 20vh;
+    width: 23vw;
+    background-color: teal;
+}
+.amb-sec1>h3{
     padding-top: 5px;
     margin-left: 65px;
     font-size: 1.3rem;
@@ -84,124 +91,11 @@
     font-family: sans-serif;
     color: rgb(2, 2, 2);
 }
-.amb-card1-sec1>h4{
+.amb-sec1>h4{
     padding-top: 1px;
     margin-left: 70px;
     font-size: 1rem;
     font-weight: 600;
     font-family: sans-serif;
     color: rgb(12, 12, 12);
-}
-
-
-.amb-card1-sec2>h4{
-    margin-top: 5px;
-    font-size: .9rem;
-    font-weight: 500;
-    font-family: sans-serif;
-    margin-left: 3px;
-}
-
-
-
-/* card2*/
-
-
-
-.amb-card2-sec1{
-    position:absolute;
-    height: 20vh;
-    width: 23vw;
-    background-color:  rgba(103, 176, 185, 0.842);
-    box-shadow:2px 2px 4px 1px rgba(0,0,0,0.8);
-    top: 65%;
-    left: 38.5%;
-}
-.amb-card2-sec2{
-    position:absolute;
-    height: 15vh;
-    width: 23vw;
-    background-color: transparent;
-    box-shadow:2px 2px 4px 1px rgba(0,0,0,0.8);
-    top: 88.5%;
-    left: 38.5%;
-}
-
-.amb-card2-sec1>h3{
-    padding-top: 5px;
-    margin-left: 65px;
-    font-size: 1.3rem;
-    font-weight: 600;
-    font-family: sans-serif;
-    color: rgb(12, 11, 11);
-}
-.amb-card2-sec1>h4{
-    padding-top: 1px;
-    margin-left: 70px;
-    font-size: 1rem;
-    font-weight: 600;
-    font-family: sans-serif;
-    color: rgb(3, 3, 3);
-}
-
-
-.amb-card2-sec2>h4{
-    position: absolute;
-    font-size: .9rem;
-    font-weight: 500;
-    font-family: sans-serif;
-    margin-left: 3px;
-}
-
-
-
-/* card3*/
-
-
-
-
-
-.amb-card3-sec1{
-    position:absolute;
-    height: 20vh;
-    width: 23vw;
-    background-color:  rgba(103, 176, 185, 0.842);
-    box-shadow:2px 2px 4px 1px rgba(0,0,0,0.8);
-    top: 65%;
-    right: 5%;
-}
-.amb-card3-sec2{
-    position:absolute;
-    height: 15vh;
-    width: 23vw;
-    background-color: transparent;
-    box-shadow:2px 2px 4px 1px rgba(0,0,0,0.8);
-    top: 88.5%;
-    right: 5%;
-}
-
-.amb-card3-sec1>h3{
-    padding-top: 5px;
-    margin-left: 65px;
-    font-size: 1.3rem;
-    font-weight: 600;
-    font-family: sans-serif;
-    color: rgb(12, 11, 11);
-}
-.amb-card3-sec1>h4{
-    padding-top: 1px;
-    margin-left: 70px;
-    font-size: 1rem;
-    font-weight: 600;
-    font-family: sans-serif;
-    color: rgb(3, 3, 3);
-}
-
-
-.amb-card3-sec2>h4{
-    position: absolute;
-    font-size: .9rem;
-    font-weight: 500;
-    font-family: sans-serif;
-    margin-left: 3px;
 }

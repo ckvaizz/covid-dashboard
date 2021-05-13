@@ -26,47 +26,25 @@ const Hospitalpage = () => {
                     <option value="4">Goa</option>
             </select>
             
-            <div className="card1">
-                <div className="card1-sec1">
-                    <h3>Hospital</h3>
-                    <h5>Doctor</h5>
-                    <h6>description of hospital</h6>
-                    
-                </div>
-                <div className="card1-sec2">
-                    
+            <div className="hos-card">
                        <h5>Availabilty</h5>
                        <h5>Bed Availabilty</h5>
                        <h5>Email</h5>
                        <h5>Contact</h5>
                        <h5>Status</h5>
                        <h5>State</h5>
-                       <h5>District</h5>
-                    
-                </div>
-            </div>
-            <div className="card2">
-                <div className="card2-sec1">
+                       <h5>District</h5>   
+                <div className="card1">
                     <h3>Hospital</h3>
-                    <h5>Doctor</h5>
-                    <h6>description of something </h6>
-                    
-                </div>
-                <div className="card2-sec2">
-                    
-                       <h5>Availabilty</h5>
-                       <h5>Bed Availabilty</h5>
-                       <h5>Email</h5>
-                       <h5>Contact</h5>
-                       <h5>Status</h5>
-                       <h5>State</h5>
-                       <h5>District</h5>
-                    
+                    <h4>Doctor</h4>
+                    <h6>Description</h6>
                 </div>
             </div>
+            
+        </div>
  
 
-        </div>
+        
     )
 }
 
