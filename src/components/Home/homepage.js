@@ -17,7 +17,7 @@ import {Redirect,useHistory} from 'react-router-dom';
     const [toDayUpdate,setTodayUpdate]= useState(false)
     const [stateCode,setStateCode] = useState('')
     const [AllStates,setAllstates]=useState([])
-
+ 
     const allStateOBj = {
         "andaman and Nicobar Islands":"AN","andhra Pradesh":"AP","arunachal Pradesh":"AR","assam":"AS","bihar":"BR","chandigarh":"CH","chhattisgarh":"CT",
         "dadra and Nagar Haveli":"DN","delhi":"DL","goa":"GA","gujarat":"GJ","haryana":"HR","himachal Pradesh":"HP","jammu and Kashmir":"JK","jharkhand":"JH",

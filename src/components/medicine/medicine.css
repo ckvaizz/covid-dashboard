@@ -43,13 +43,27 @@
 
 /* card1*/
 
+.medi-card-main{
+    position: absolute;
+    top: 30%;
+    height: 60vh;
+    width: 100%;
+    background-color:transparent;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.medi-card-main::-webkit-scrollbar {
+    display: none;
+  }
 
 .medi-card1{
-    position: absolute;
+    position: relative;
     height: 55vh;
     width: 20vw;
-    top: 27vh;
-    left: 10%;
+    margin-top: 2%;
+    margin-left: 9%;
     border-radius: 45%;
     background-color: transparent;
     box-shadow:2px 2px 4px 1px rgba(0,0,0,0.8);
@@ -89,100 +103,4 @@
     color: red;
 }
 
-/* card2*/
 
-
-.medi-card2{
-    position: absolute;
-    height: 55vh;
-    width: 20vw;
-    top: 27vh;
-    left: 40%;
-    border-radius: 45%;
-    background-color: transparent;
-    box-shadow:2px 2px 4px 1px rgba(0,0,0,0.8);
-    overflow: hidden;
-}
-
-.top-curve2{
-    height: 26vh;
-    width: 20vw;
-    position: relative;
-    background-color: rgb(207, 13, 13);
-}
-.top-curve2>h2{
-    position: absolute;
-    top: 20%;
-    left: 35%;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: white;
-}
-
-.top-curve2>h5{
-    position: absolute;
-    top: 40%;
-    left: 14%;
-    font-size: .6rem;
-    font-weight: 500;
-    color: white;
-}
-
-.medi-card2>h4{
-    padding-top: 5px;
-    margin-left: 70px;
-    font-size: .8rem;
-    font-weight: 600;
-    font-family: sans-serif;
-    color: red;
-}
-
-
-/* card3*/
-
-
-
-.medi-card3{
-    position: absolute;
-    height: 55vh;
-    width: 20vw;
-    top: 27vh;
-    right: 10%;
-    border-radius: 45%;
-    background-color: transparent;
-    box-shadow:2px 2px 4px 1px rgba(0,0,0,0.8);
-    overflow: hidden;
-}
-
-.top-curve3{
-    height: 26vh;
-    width: 20vw;
-    position: relative;
-    background-color: rgb(207, 13, 13);
-}
-.top-curve3>h2{
-    position: absolute;
-    top: 20%;
-    left: 35%;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: white;
-}
-
-.top-curve3>h5{
-    position: absolute;
-    top: 40%;
-    left: 14%;
-    font-size: .6rem;
-    font-weight: 500;
-    color: white;
-}
-
-.medi-card3>h4{
-    padding-top: 5px;
-    margin-left: 70px;
-    font-size: .8rem;
-    font-weight: 600;
-    font-family: sans-serif;
-    color: red;
-}

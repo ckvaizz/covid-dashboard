@@ -2,7 +2,7 @@ import React from 'react';
 import './medicine.css';
 
 
-const Medicine = () =>{
+const Medicine = () =>{ 
     return(
         <div className="med-main">
             <h2>Medicine</h2>
@@ -17,6 +17,7 @@ const Medicine = () =>{
                     <option value="3">Karnataka</option>
                     <option value="4">Goa</option>
             </select>
+            <div className="medi-card-main">
                 <div className="medi-card1">
                     <div className="top-curve1">
                         <h2>Name</h2>
@@ -33,9 +34,8 @@ const Medicine = () =>{
                     <h4>Phone</h4>
                 </div>
 
-
-                <div className="medi-card2">
-                    <div className="top-curve2">
+                <div className="medi-card1">
+                    <div className="top-curve1">
                         <h2>Name</h2>
                         <h5>Lorem ipsum, or lipsum as it is sometimes known,
                              is dummy text used in laying out print, graphic or web designs.
@@ -50,8 +50,8 @@ const Medicine = () =>{
                     <h4>Phone</h4>
                 </div>
 
-                <div className="medi-card3">
-                    <div className="top-curve3">
+                <div className="medi-card1">
+                    <div className="top-curve1">
                         <h2>Name</h2>
                         <h5>Lorem ipsum, or lipsum as it is sometimes known,
                              is dummy text used in laying out print, graphic or web designs.
@@ -65,6 +65,26 @@ const Medicine = () =>{
                     <h4>Email</h4>
                     <h4>Phone</h4>
                 </div>
+
+                <div className="medi-card1">
+                    <div className="top-curve1">
+                        <h2>Name</h2>
+                        <h5>Lorem ipsum, or lipsum as it is sometimes known,
+                             is dummy text used in laying out print, graphic or web designs.
+                             The passage is attributed to an unknown 
+                            </h5>
+
+                    </div>
+                    <h4>Address</h4>
+                    <h4>District</h4>
+                    <h4>City</h4>
+                    <h4>Email</h4>
+                    <h4>Phone</h4>
+                </div>
+            </div>
+
+                
+                
         </div>
     )
 }

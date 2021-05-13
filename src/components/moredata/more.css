@@ -61,6 +61,11 @@
    justify-content: center;
    
 }
+
+.more-table::-webkit-scrollbar {
+    display: none;
+  }
+
 th{
 
     
