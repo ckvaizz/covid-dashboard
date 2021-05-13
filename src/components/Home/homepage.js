@@ -17,9 +17,10 @@ import {Redirect,useHistory} from 'react-router-dom';
     const [toDayUpdate,setTodayUpdate]= useState(false)
     const [stateCode,setStateCode] = useState('')
     const [AllStates,setAllstates]=useState([])
+
     const allStateOBj = {
         "andaman and Nicobar Islands":"AN","andhra Pradesh":"AP","arunachal Pradesh":"AR","assam":"AS","bihar":"BR","chandigarh":"CH","chhattisgarh":"CT",
-        "dadra and Nagar Haveli":"DN","daman and diu":"DD","delhi":"DL","goa":"GA","gujarat":"GJ","haryana":"HR","himachal Pradesh":"HP","jammu and Kashmir":"JK","jharkhand":"JH",
+        "dadra and Nagar Haveli":"DN","delhi":"DL","goa":"GA","gujarat":"GJ","haryana":"HR","himachal Pradesh":"HP","jammu and Kashmir":"JK","jharkhand":"JH",
         "karnataka":"KA","kerala":"KL","lakshadweep":"LD","madhya Pradesh":"MP","maharashtra":"MH","manipur":"MN","meghalaya":"ML","mizoram":"MZ","nagaland":"NL","odisha":"OR","puducherry":"PY"
         ,"punjab":"PB","rajasthan":"RJ","sikkim":"SK","tamil Nadu":"TN","telangana":"TG","tripura":"TR","uttar Pradesh":"UP","uttarakhand":"UT","west Bengal":"WB"
     }
@@ -188,6 +189,7 @@ import {Redirect,useHistory} from 'react-router-dom';
                 </div>
             </div>
             {/* H-dailycase */} 
+            {console.log(apiData[stateCode]?apiData[stateCode].districts:'k')}
             {apiData[stateCode] && apiData[stateCode].districts[Userdata.district].delta ?
             <div className={showingDiv === "tod"?"H-dailycase":"div-disable"}>
                 <h1>{toDayUpdate?"Today":"Yesterday"}-cases</h1>
@@ -219,9 +221,9 @@ import {Redirect,useHistory} from 'react-router-dom';
            <div className="H-btn">
            <div className="H-btn-hos" onClick={ () => history.push("/hospital")}><p>Hospital</p></div>
            <div className="H-btn-med" onClick={ () => history.push("/medicine")}><p>Medicine</p></div>
-           <div className="H-btn-amb"><p>Ambulance</p></div>
-           <div className="H-btn-mr"><p>All states</p></div>
-        
+           <div className="H-btn-amb" onClick={ () => history.push("/ambulance")}><p>Ambulance</p></div>
+           <div className="H-btn-mr" onClick={ () => history.push("/more")}><p>More</p></div>
+       
            </div>
            
            </div>
