@@ -1,16 +1,18 @@
 .hospital-main{
-    height: 75vh;
+    height: 80vh;
     width: 100%;
     background:transparent;
     position: relative;
     background-size: cover;
     top: 4vh;
-    overflow: scroll;
+   
    
 }
 .hospital-main::-webkit-scrollbar {
     display: none;
   }
+
+
 .hospital-main>h2{
     position: absolute;
     top: 22%;
@@ -28,22 +30,35 @@
     height: 30px;
     width: 150px;
     overflow: scroll;
-    left: 50px;
+    left: 8%;
     top: 24%;
     background-color: rgba(120, 170, 177, 0.842);
     color: rgb(5, 5, 5);
     font-weight: 500;
 }
-.hospital-main>select>option{
-    min-height: 20px;
-    overflow: scroll;
-}
 
+
+
+.hos-card-main{
+    position: absolute;
+    top: 35%;
+    height: 54vh;
+    width: 100%;
+    background-color: transparent;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+} 
+.hos-card-main::-webkit-scrollbar {
+    display: none;
+  }
 
 .hos-card{
     position: relative;
-    margin-top: 20%;
-    margin-left: 5%;
+    margin-top: 4%;
+    margin-left: 8%;
     height: 38vh;
     width: 38vw;
     background-color: transparent;
@@ -59,6 +74,7 @@
     font-size: .8rem;
     font-weight: 500;
     font-family: sans-serif;
+    
 }
 
 .card1{

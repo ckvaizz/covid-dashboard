@@ -21,7 +21,7 @@ const Ambulance = () => {
             <div className="img-one">
             <img src={emergencyimg} alt="ll"/>
             </div>
-            
+        <div className="amb-card-main">
             <div className="amb-card">
             <div className="amb-sec1">
                 <h3>District</h3>
@@ -29,10 +29,52 @@ const Ambulance = () => {
                 <h4>Phone</h4>
             </div>
             
-                <h4>Lorem ipsum, or lipsum as it is sometimes known,
-                             is dummy text used in laying out print,</h4>
+            <h4>Lorem ipsum, or lipsum as it is sometimes known,
+                is dummy text used in laying out print
+            </h4>
             
             </div>
+
+            <div className="amb-card">
+            <div className="amb-sec1">
+                <h3>District</h3>
+                <h4>Area</h4>
+                <h4>Phone</h4>
+            </div>
+            
+            <h4>Lorem ipsum, or lipsum as it is sometimes known,
+                is dummy text used in laying out print
+            </h4>
+            
+            </div>
+
+            <div className="amb-card">
+            <div className="amb-sec1">
+                <h3>District</h3>
+                <h4>Area</h4>
+                <h4>Phone</h4>
+            </div>
+            
+            <h4>Lorem ipsum, or lipsum as it is sometimes known,
+                is dummy text used in laying out print
+            </h4>
+            
+            </div>
+
+            <div className="amb-card">
+            <div className="amb-sec1">
+                <h3>District</h3>
+                <h4>Area</h4>
+                <h4>Phone</h4>
+            </div>
+            
+            <h4>Lorem ipsum, or lipsum as it is sometimes known,
+                is dummy text used in laying out print
+            </h4>
+            
+            </div>
+
+        </div>
 
             
         </div>

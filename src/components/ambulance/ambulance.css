@@ -1,21 +1,19 @@
 .amb-main{
-    height: 85vh;
+    height: 80vh;
     width: 100%;
     background-color:transparent;
     position: relative;
     background-size: cover;
-    overflow: scroll;
+
 }
-.amb-main::-webkit-scrollbar { 
-    display: none;  
-}
+
 
 .amb-main>select{
     position: absolute;
     height: 30px;
     width: 150px;
     overflow: scroll;
-    left: 5%;
+    left: 8%;
     top: 22%;
     background-color: rgba(233, 236, 236, 0.842);
     color: rgb(5, 5, 5);
@@ -44,23 +42,38 @@
 
 .img-one>img{
     position: absolute;
-    height: 25vh;
+    height: 22vh;
     width: 90vw;
-    top: 28vh;
+    top: 25vh;
     left: 5%;
 }
 
 
 
-/* card1*/
+/* card*/
 
 
+
+.amb-card-main{
+    position: absolute;
+    top: 59%;
+    height: 38vh;
+    width: 100%;
+    background-color:transparent;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.amb-card-main::-webkit-scrollbar {
+    display: none;
+  }
 
 
 .amb-card{
     position: relative;
-    margin-top: 30%;
-    margin-left: 5%;
+    margin-top: 30px;
+    margin-left: 8.5%;
     height: 35vh;
     width: 23vw;
     background-color:transparent;
