@@ -40,132 +40,58 @@
 }
 
 
-
-.card1-sec1{
-    position: absolute;
-    top: 40%;
-    left: 50px;
+.hos-card{
+    position: relative;
+    margin-top: 20%;
+    margin-left: 5%;
     height: 38vh;
-    width: 18vw;
-    background-color: rgba(36, 79, 85, 0.842);
-    border-radius: 0px;
-    box-shadow:1px 1px 1px 1px rgba(0,0 , 0, 0.3);
-
-}
-
-.card1-sec2{
-    position: absolute;
-    top: 40%;
-    left: 23%;
-    height: 38vh;
-    width: 20vw;
+    width: 38vw;
     background-color: transparent;
     border-radius: 0px;
-    box-shadow:0px 2px 4px 1px rgba(0,0,0,0.3);
+    box-shadow:1px 1px 10px 1px rgba(0, 0, 0, 0.432);
 
 }
 
-.card1-sec1>h3{
-    position: absolute;
-    text-align: center;
-    top: 65px;
-    left: 40px;
-    font-size: 1.8rem;
-    font-weight: 700;
-    font-family: Verdana;
-    padding-left: 0px;
-}
-.card1-sec1>h5{
-    position: absolute;
-    font-size: 1.1rem;
-    left: 90px;
-    top: 100px ;
-}
-
-.card1-sec1>h4{
-   
-    position: absolute;
-    text-align: center;
-    top: 95px;
-    left: 30px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    font-family: Verdana;
-    padding-left: 2px;
-}
-
-.card1-sec1>h6{
-    position: absolute;
-    bottom: 30px;
-    left: 45px;
-    font-size: .9rem;
-}
-
-.card1-sec2>h5{
-    padding-top: 8px;
-    margin-left: 18px;
+.hos-card>h5{
+    padding-top: 7px;
+    margin-top: 0px;
+    margin-left: 50%;
     font-size: .8rem;
     font-weight: 500;
     font-family: sans-serif;
 }
 
-
-
-
-
-.card2-sec1{
+.card1{
     position: absolute;
-    top: 40%;
-    left: 55%;
+    top: 0px;
     height: 38vh;
     width: 18vw;
-    background-color:rgba(36, 79, 85, 0.842);
-    border-radius: 0px;
-    box-shadow:1px 1px 1px 1px rgba(0,0 , 0, 0.3);
-
+    background-color: teal;
 }
 
-.card2-sec2{
-    position: absolute;
-    top: 40%;
-    left: 73%;
-    height: 38vh;
-    width: 20vw;
-    background-color: transparent;
-    border-radius: 0px;
-    box-shadow:0px 2px 4px 1px rgba(0,0,0,0.3);
-
-}
-
-.card2-sec1>h3{
-    position: absolute;
+.card1>h3{
+    margin-top: 50px;
     text-align: center;
-    top: 65px;
-    left: 40px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     font-family: Verdana;
     padding-left: 0px;
 }
-.card2-sec1>h5{
-    position: absolute;
+
+.card1>h4{
+    margin-top: 20px;
+    text-align: center;
     font-size: 1.1rem;
-    left: 90px;
-    top: 100px ;
+    
 }
 
-
-.card2-sec1>h6{
-    position: absolute;
-    bottom: 30px;
-    left: 45px;
+.card1>h6{
+    margin-top: 20px ;
+    text-align: center;
     font-size: .9rem;
 }
 
-.card2-sec2>h5{
-    padding-top: 8px;
-    margin-left: 18px;
-    font-size: .8rem;
-    font-weight: 500;
-    font-family: sans-serif;
-}
+
+
+
+
