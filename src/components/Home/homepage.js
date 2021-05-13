@@ -25,8 +25,8 @@ const Homepage = () => {
            <div className="H-btn">
            <div className="H-btn-hos" onClick={ () => history.push("/hospital")}><p>Hospital</p></div>
            <div className="H-btn-med" onClick={ () => history.push("/medicine")}><p>Medicine</p></div>
-           <div className="H-btn-amb"><p>Ambulance</p></div>
-           <div className="H-btn-mr"><p>More</p></div>
+           <div className="H-btn-amb" onClick={ () => history.push("/ambulance")}><p>Ambulance</p></div>
+           <div className="H-btn-mr" onClick={ () => history.push("/more")}><p>More</p></div>
        
            </div>
            </div>

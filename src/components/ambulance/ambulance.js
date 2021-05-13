@@ -1,7 +1,7 @@
 import React from 'react';
 import './ambulance.css';
 import emergencyimg from '../../images/emergency5.jpg';
-import emergencyimg2 from '../../images/ambulance.png';
+
 
 const Ambulance = () => {
     return(

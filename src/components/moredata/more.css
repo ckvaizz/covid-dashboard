@@ -1,0 +1,63 @@
+.more-main{
+    height: 85vh;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    background-size: cover;
+    overflow: scroll;
+}
+.more-main::-webkit-scrollbar {
+    display: none;
+}
+
+.more-main>select{
+    position: absolute;
+    height: 30px;
+    width: 150px;
+    overflow: scroll;
+    left: 5%;
+    top: 22%;
+    background-color: rgba(233, 236, 236, 0.842);
+    color: rgb(5, 5, 5);
+    font-weight: 500;
+}
+
+.more-main>h2{
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.more-main>h2::first-letter{
+    color: red;
+}
+
+
+.more-table{
+    height: 50vh;
+    
+    overflow-x: auto;
+}
+
+.more-table>table{
+    position: absolute;
+    top: 35%;
+    left: 4%;
+    border-spacing: 1px;
+    background:linear-gradient(to left,rgba(243, 160, 160, 0.842),rgb(230, 21, 21));
+    height: 30px;
+    width: 90%;
+    border-radius: 10px;
+    border: 3px solid rgb(32, 31, 31);
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color: rgba(190, 214, 226, 0.637);
+}

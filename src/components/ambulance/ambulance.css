@@ -7,7 +7,7 @@
     overflow: scroll;
 }
 .amb-main::-webkit-scrollbar {
-    display: none;
+    display: none;  
 }
 
 .amb-main>select{
@@ -150,7 +150,7 @@
     font-size: .9rem;
     font-weight: 500;
     font-family: sans-serif;
-    padding-top: 3px;
+    margin-left: 3px;
 }
 
 
@@ -203,5 +203,5 @@
     font-size: .9rem;
     font-weight: 500;
     font-family: sans-serif;
-    padding-top: 3px;
+    margin-left: 3px;
 }
