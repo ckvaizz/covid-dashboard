@@ -13,9 +13,10 @@ Redirect,} from "react-router-dom";
 function App() {
   return (
     <div >
-     <Navbar />
+     
      <Footer/>
      <Router>
+     <Navbar />
       <Switch>
         <Route path="/" exact>
          <Homepage />

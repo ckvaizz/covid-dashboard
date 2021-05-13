@@ -4,11 +4,9 @@
     background-color: transparent;
     position: relative;
     background-size: cover;
-    overflow: scroll;
+    
 }
-.more-main::-webkit-scrollbar {
-    display: none;
-}
+
 
 .more-main>select{
     position: absolute;
@@ -21,7 +19,25 @@
     color: rgb(5, 5, 5);
     font-weight: 500;
 }
-
+.more-SelectToday{
+    position: absolute;
+    background-color: rgb(222, 228, 228);
+    height: 20px;
+    width: 110px;
+    top: 22%;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 7px 2px rgba(0,0,0,0.3);
+    transition: all 1s ;
+}
+.more-SelectToday:hover{
+    box-shadow: 2px 1px 7px 6px rgba(57, 164, 252, 0.616);
+    background-color: rgb(209, 160, 125);
+}
 .more-main>h2{
     position: absolute;
     top: 20%;
@@ -36,28 +52,59 @@
 
 
 .more-table{
-    height: 50vh;
+    position: relative;
+    height: 23rem;
+     overflow: scroll;
+    width: 100%;
+    top: 30%;
+   display: flex;
+   justify-content: center;
+   
+}
+th{
+
     
-    overflow-x: auto;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 4px;
+    background-color: rgb(235, 118, 118);
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+    
+   
 }
 
 .more-table>table{
-    position: absolute;
-    top: 35%;
-    left: 4%;
+   position:absolute;
+    text-align: center;
     border-spacing: 1px;
     background:linear-gradient(to left,rgba(243, 160, 160, 0.842),rgb(230, 21, 21));
-    height: 30px;
+    height: 10px;
     width: 90%;
     border-radius: 10px;
     border: 3px solid rgb(32, 31, 31);
+
 }
 
 th, td {
     text-align: left;
     padding: 8px;
+  
 }
 
 tr:nth-child(even){
     background-color: rgba(190, 214, 226, 0.637);
+}
+.selectPlease{
+    position: absolute;
+    height: 20rem;
+
+}
+.selectPlease>img{
+    height: 250px;
+}
+.selectPlease>h2{
+    color: red;
+    margin-top: 30px;
+    text-align: center;
 }
