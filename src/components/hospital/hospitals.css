@@ -1,0 +1,171 @@
+.hospital-main{
+    height: 75vh;
+    width: 100%;
+    background:transparent;
+    position: relative;
+    background-size: cover;
+    top: 4vh;
+    overflow: scroll;
+   
+}
+.hospital-main::-webkit-scrollbar {
+    display: none;
+  }
+.hospital-main>h2{
+    position: absolute;
+    top: 22%;
+    left: 43%;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.hospital-main>h2::first-letter{
+    color: red;
+}
+
+.hospital-main>select{
+    position: absolute;
+    height: 30px;
+    width: 150px;
+    overflow: scroll;
+    left: 50px;
+    top: 24%;
+    background-color: rgba(120, 170, 177, 0.842);
+    color: rgb(5, 5, 5);
+    font-weight: 500;
+}
+.hospital-main>select>option{
+    min-height: 20px;
+    overflow: scroll;
+}
+
+
+
+.card1-sec1{
+    position: absolute;
+    top: 40%;
+    left: 50px;
+    height: 38vh;
+    width: 18vw;
+    background-color: rgba(36, 79, 85, 0.842);
+    border-radius: 0px;
+    box-shadow:1px 1px 1px 1px rgba(0,0 , 0, 0.3);
+
+}
+
+.card1-sec2{
+    position: absolute;
+    top: 40%;
+    left: 23%;
+    height: 38vh;
+    width: 20vw;
+    background-color: transparent;
+    border-radius: 0px;
+    box-shadow:0px 2px 4px 1px rgba(0,0,0,0.3);
+
+}
+
+.card1-sec1>h3{
+    position: absolute;
+    text-align: center;
+    top: 65px;
+    left: 40px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: Verdana;
+    padding-left: 0px;
+}
+.card1-sec1>h5{
+    position: absolute;
+    font-size: 1.1rem;
+    left: 90px;
+    top: 100px ;
+}
+
+.card1-sec1>h4{
+   
+    position: absolute;
+    text-align: center;
+    top: 95px;
+    left: 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: Verdana;
+    padding-left: 2px;
+}
+
+.card1-sec1>h6{
+    position: absolute;
+    bottom: 30px;
+    left: 45px;
+    font-size: .9rem;
+}
+
+.card1-sec2>h5{
+    padding-top: 8px;
+    margin-left: 18px;
+    font-size: .8rem;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+
+
+
+
+.card2-sec1{
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    height: 38vh;
+    width: 18vw;
+    background-color:rgba(36, 79, 85, 0.842);
+    border-radius: 0px;
+    box-shadow:1px 1px 1px 1px rgba(0,0 , 0, 0.3);
+
+}
+
+.card2-sec2{
+    position: absolute;
+    top: 40%;
+    left: 73%;
+    height: 38vh;
+    width: 20vw;
+    background-color: transparent;
+    border-radius: 0px;
+    box-shadow:0px 2px 4px 1px rgba(0,0,0,0.3);
+
+}
+
+.card2-sec1>h3{
+    position: absolute;
+    text-align: center;
+    top: 65px;
+    left: 40px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: Verdana;
+    padding-left: 0px;
+}
+.card2-sec1>h5{
+    position: absolute;
+    font-size: 1.1rem;
+    left: 90px;
+    top: 100px ;
+}
+
+
+.card2-sec1>h6{
+    position: absolute;
+    bottom: 30px;
+    left: 45px;
+    font-size: .9rem;
+}
+
+.card2-sec2>h5{
+    padding-top: 8px;
+    margin-left: 18px;
+    font-size: .8rem;
+    font-weight: 500;
+    font-family: sans-serif;
+}

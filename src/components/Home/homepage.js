@@ -4,7 +4,7 @@ import Banner from "../../images/covid3.jpg"
 import Axios from 'axios'
 import MapImg from "../../images/map-gif.gif"
 import CoronaGif from "../../images/corona-gif.gif"
-
+import {Redirect,useHistory} from 'react-router-dom';
  const Homepage = () => {
     //To store user's state and districts
     const [Userdata,setUserData] = useState("")
@@ -90,8 +90,12 @@ import CoronaGif from "../../images/corona-gif.gif"
         
         
      
+
+
+    const history=useHistory()
     return(
-       <>
+        <>
+       
        <div className="H-main">
            <div className="H-img">
         <img src={Banner} alt=""/>
@@ -130,7 +134,7 @@ import CoronaGif from "../../images/corona-gif.gif"
                 <h1>
                     Please select your state and district to continue.
                 </h1>
-                <img src={MapImg} alt=""/>
+                <img src={MapImg} alt=""/> 
 
             </div>
             
@@ -213,8 +217,8 @@ import CoronaGif from "../../images/corona-gif.gif"
             </div>
         
            <div className="H-btn">
-           <div className="H-btn-hos"><p>Hospital</p></div>
-           <div className="H-btn-med"><p>Medicine</p></div>
+           <div className="H-btn-hos" onClick={ () => history.push("/hospital")}><p>Hospital</p></div>
+           <div className="H-btn-med" onClick={ () => history.push("/medicine")}><p>Medicine</p></div>
            <div className="H-btn-amb"><p>Ambulance</p></div>
            <div className="H-btn-mr"><p>All states</p></div>
         
@@ -223,6 +227,8 @@ import CoronaGif from "../../images/corona-gif.gif"
            </div>
            
        </> 
+       
+
     )
 }
 
