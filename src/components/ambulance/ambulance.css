@@ -75,7 +75,7 @@
     position: relative;
     margin-top: 30px;
     margin-left: 8.5%;
-    height: 35vh;
+    height: 53vh;
     width: 23vw;
     background-color:transparent;
     box-shadow:2px 2px 4px 1px rgba(0,0,0,0.8);
@@ -93,23 +93,40 @@
 
 .amb-sec1{
    
-    height: 20vh;
+    height: 25vh;
     width: 23vw;
     background-color: teal;
 }
 .amb-sec1>h3{
-    padding-top: 5px;
-    margin-left: 65px;
-    font-size: 1.3rem;
+    padding-top: 3px;
+    margin-left: 50px;
+    font-size: 1rem;
     font-weight: 600;
     font-family: sans-serif;
     color: rgb(2, 2, 2);
 }
 .amb-sec1>h4{
-    padding-top: 1px;
-    margin-left: 70px;
-    font-size: 1rem;
+    padding-top: 3px;
+    margin-left: 30px;
+    font-size: .9rem;
     font-weight: 600;
     font-family: sans-serif;
     color: rgb(12, 12, 12);
+}
+
+.selectPlease{
+    position: absolute;
+    height: 22rem; 
+    left: 40%;
+
+}
+.selectPlease>img{
+    height: 250px;
+    margin-left: 10%;
+    margin-bottom: 40px;
+}
+.selectPlease>h2{
+    color: red;
+    margin-top: 30px;
+    text-align: center;
 }

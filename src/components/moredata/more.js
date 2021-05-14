@@ -94,7 +94,7 @@ const Moredata = () => {
                 
                
                 </table>
-: <div className="selectPlease">
+: <div className="selectPlease"> 
    <h2>Please select state .. </h2>
                <img src={Corona} alt=""/>
 </div>
