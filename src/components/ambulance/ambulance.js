@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './ambulance.css';
-import emergencyimg from '../../images/emergency5.jpg';
-import Axios from 'axios';
-
+import Axios from 'axios'
 
 const Ambulance = () => {
     const [apiData,setApiData] = useState([])
@@ -35,6 +33,7 @@ const Ambulance = () => {
     }
     return(
         <div className="amb-main">
+            <div className="head-select">
             <h2>Ambulance</h2>
             <select onChange={stateChangeHandler}> 
             <option  value="">State</option>
@@ -48,9 +47,8 @@ const Ambulance = () => {
                     
                    
             </select>
-            <div className="img-one">
-            <img src={emergencyimg} alt="ll"/>
             </div>
+            
         <div className="amb-card-main">
         {
                     selectedState && apiData?

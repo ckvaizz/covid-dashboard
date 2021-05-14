@@ -34,6 +34,7 @@ const Medicine = () =>{
     }
     return(
         <div className="med-main">
+            <div className="med-head-select">
             <h2>Medicine</h2>
             <select onChange={stateChangeHandler}> 
             <option  value="">State</option>
@@ -47,6 +48,7 @@ const Medicine = () =>{
                     
                    
             </select>
+            </div>
             <div className="medi-card-main">
             {
                     selectedState && apiData?

@@ -6,21 +6,28 @@
     background-size: cover;
 
 }
+.head-select{
+    position: relative;
+    top: 13vh;
+    height: 12vh;
+    width: 100%;
+    background-color: transparent;
+    align-items: center;
+}
 
-
-.amb-main>select{
+.head-select>select{
     position: absolute;
     height: 30px;
     width: 150px;
     overflow: scroll;
-    left: 8%;
-    top: 22%;
+    left: 10%;
+    top: 25px;
     background-color: rgba(233, 236, 236, 0.842);
     color: rgb(5, 5, 5);
     font-weight: 500;
 }
 
-.amb-main>h2{
+.head-select>h2{
     position: absolute;
     top: 20%;
     left: 45%;
@@ -28,7 +35,7 @@
     font-weight: 700;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.amb-main>h2::first-letter{
+.head-select>h2::first-letter{
     color: red;
 }
 
@@ -40,13 +47,7 @@
 
 
 
-.img-one>img{
-    position: absolute;
-    height: 22vh;
-    width: 90vw;
-    top: 25vh;
-    left: 5%;
-}
+
 
 
 
@@ -56,8 +57,8 @@
 
 .amb-card-main{
     position: absolute;
-    top: 59%;
-    height: 38vh;
+    top: 32%;
+    height: 60vh;
     width: 100%;
     background-color:transparent;
     overflow: scroll;
