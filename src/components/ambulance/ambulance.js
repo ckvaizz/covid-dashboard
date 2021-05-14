@@ -1,11 +1,12 @@
 import React from 'react';
 import './ambulance.css';
-import emergencyimg from '../../images/emergency5.jpg';
+
 
 
 const Ambulance = () => {
     return(
         <div className="amb-main">
+            <div className="head-select">
             <h2>Ambulance</h2>
             <select>
             <option value="0">State</option>
@@ -18,9 +19,8 @@ const Ambulance = () => {
                     <option value="3">Karnataka</option>
                     <option value="4">Goa</option>
             </select>
-            <div className="img-one">
-            <img src={emergencyimg} alt="ll"/>
             </div>
+            
         <div className="amb-card-main">
             <div className="amb-card">
             <div className="amb-sec1">

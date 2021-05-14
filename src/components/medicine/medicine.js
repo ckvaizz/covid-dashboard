@@ -5,6 +5,7 @@ import './medicine.css';
 const Medicine = () =>{ 
     return(
         <div className="med-main">
+            <div className="med-head-select">
             <h2>Medicine</h2>
             <select>
             <option value="0">State</option>
@@ -17,6 +18,7 @@ const Medicine = () =>{
                     <option value="3">Karnataka</option>
                     <option value="4">Goa</option>
             </select>
+            </div>
             <div className="medi-card-main">
                 <div className="medi-card1">
                     <div className="top-curve1">

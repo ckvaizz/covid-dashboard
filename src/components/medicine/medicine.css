@@ -12,7 +12,16 @@
     display: none;
 }
 
-.med-main>select{
+.med-head-select{
+    position: relative;
+    top: 13.5vh;
+    height: 12vh;
+    width: 100%;
+    background-color: transparent;
+    align-items: center;
+}
+
+.med-head-select>select{
     position: absolute;
     height: 30px;
     width: 150px;
@@ -23,11 +32,8 @@
     color: rgb(5, 5, 5);
     font-weight: 500;
 }
-.med-main>select{
-    min-height: 20px;
-    overflow: scroll;
-}
-.med-main>h2{
+
+.med-head-select>h2{
     position: absolute;
     top: 20%;
     left: 45%;
@@ -35,7 +41,7 @@
     font-weight: 700;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.med-main>h2::first-letter{
+.med-head-select>h2::first-letter{
     color: red;
 }
 
@@ -56,7 +62,7 @@
 
 .medi-card-main::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .medi-card1{
     position: relative;
@@ -76,6 +82,7 @@
     position: relative;
     background-color: rgb(207, 13, 13);
 }
+
 .top-curve1>h2{
     position: absolute;
     top: 20%;
@@ -102,5 +109,3 @@
     font-family: sans-serif;
     color: red;
 }
-
-
