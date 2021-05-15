@@ -26,14 +26,16 @@ import {Redirect,useHistory} from 'react-router-dom';
     }
     
     
-        useEffect(()=>{
-            Axios.get(' https://api.covid19india.org/v4/min/data.min.json').then(resp=>{
-                console.log(resp.data)
-                setApiData(resp.data)
-            getLocalUserdata();
-            setAllstates(Object.keys(allStateOBj))
-
+    
+        useEffect(async()=>{
+           await  Axios.get(' https://api.covid19india.org/v4/min/data.min.json').then( resp=>{
+                        setApiData(resp.data)
             })
+
+             getLocalUserdata();
+            setAllstates(Object.keys(allStateOBj))
+           
+           
         },[])
         
         
@@ -45,7 +47,7 @@ import {Redirect,useHistory} from 'react-router-dom';
                 setUserData( JSON.parse(localStorage.getItem("stateData")))
                 setShowingDiv('dis')
                 setStateCode(allStateOBj[JSON.parse(localStorage.getItem("stateData")).state])
-                setTodayStatus()
+                
             }
         }
         //
@@ -70,7 +72,7 @@ import {Redirect,useHistory} from 'react-router-dom';
             setUserData({state:SelectedUserState,district:district})
             setShowingDiv("dis")
             setStateCode(allStateOBj[JSON.parse(localStorage.getItem("stateData")).state])
-            setTodayStatus()
+           // setTodayStatus()
             
         }
         const divNextHandler=()=>{
@@ -78,16 +80,9 @@ import {Redirect,useHistory} from 'react-router-dom';
             else if(showingDiv=== 'sta') setShowingDiv('tod')
             else setShowingDiv('dis')
         }
-       function setTodayStatus(){
-           let today = new Date().toDateString()
-           let updatedDay = apiData[stateCode]?new Date(apiData[stateCode].meta.last_updated).toDateString():setTimeout(()=>{setTodayStatus()},2000)
-           
-           if(today===updatedDay) return setTodayUpdate(true)
-            
-           
-       }
+      
        
-       
+        
         
         
      
@@ -150,7 +145,7 @@ import {Redirect,useHistory} from 'react-router-dom';
                     <div>
                        <h3>Confirmed</h3>
                     </div>
-                    {/* {console.log(apiData[stateCode]?apiData[stateCode].districts[Userdata.district]:'',"koii")}  */}
+                    {console.log(apiData[stateCode]?apiData[stateCode]:'',)} 
                     <h5>{apiData[stateCode]?apiData[stateCode].districts[Userdata.district].total.confirmed:''}.</h5>
                     </div>
                     <div className="H-cardRecoverd">
@@ -189,11 +184,11 @@ import {Redirect,useHistory} from 'react-router-dom';
                 </div>
             </div>
             {/* H-dailycase */} 
-            {console.log(apiData[stateCode]?apiData[stateCode].districts:'k')}
+           
             {apiData[stateCode] && apiData[stateCode].districts[Userdata.district].delta ?
             <div className={showingDiv === "tod"?"H-dailycase":"div-disable"}>
-                <h1>{toDayUpdate?"Today":"Yesterday"}-cases</h1>
-                   <p style={{color:'red'}}>Todays-cases will update soon..</p> 
+                <h1>Latest-updated-cases</h1>
+                  
                 <div className="H-dailydistrict">
                     <h4>{Userdata?Userdata.district:''}</h4>
                     
