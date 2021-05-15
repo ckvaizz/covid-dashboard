@@ -58,9 +58,9 @@
 .hos-card{
     position: relative;
     margin-top: 4%;
-    margin-left: 8%;
-    height: 38vh;
-    width: 38vw;
+    margin-left: 4%;
+    height: 40vh;
+    width: 45vw;
     background-color: transparent;
     border-radius: 0px;
     box-shadow:1px 1px 10px 1px rgba(0, 0, 0, 0.432);
@@ -70,7 +70,7 @@
 .hos-card>h5{
     padding-top: 7px;
     margin-top: 0px;
-    margin-left: 50%;
+    margin-left: 45%;
     font-size: .8rem;
     font-weight: 500;
     font-family: sans-serif;
@@ -80,34 +80,49 @@
 .card1{
     position: absolute;
     top: 0px;
-    height: 38vh;
-    width: 18vw;
+    height: 40vh;
+    width: 20vw;
     background-color: teal;
 }
 
 .card1>h3{
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 600;
     font-family: Verdana;
     padding-left: 0px;
 }
 
 .card1>h4{
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     
 }
 
 .card1>h6{
-    margin-top: 20px ;
-    text-align: center;
-    font-size: .9rem;
+    margin-top: 15px ;
+    text-align: left;
+    font-size: .7rem;
 }
 
+.selectPlease{
+    position: absolute;
+    height: 22rem; 
+    left: 38%;
 
+}
+.selectPlease>img{
+    height: 250px;
+    margin-left: 10%;
+    margin-bottom: 40px;
+}
+.selectPlease>h2{
+    color: red; 
+    margin-top: 30px;
+    text-align: center;
+}
 
 
 

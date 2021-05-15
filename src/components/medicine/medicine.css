@@ -66,10 +66,10 @@
 
 .medi-card1{
     position: relative;
-    height: 55vh;
-    width: 20vw;
+    height: 59vh;
+    width: 25vw;
     margin-top: 2%;
-    margin-left: 9%;
+    margin-left: 7%;
     border-radius: 45%;
     background-color: transparent;
     box-shadow:2px 2px 4px 1px rgba(0,0,0,0.8);
@@ -78,34 +78,52 @@
 
 .top-curve1{
     height: 26vh;
-    width: 20vw;
+    width: 25vw;
     position: relative;
     background-color: rgb(207, 13, 13);
 }
 
 .top-curve1>h2{
     position: absolute;
-    top: 20%;
-    left: 35%;
-    font-size: 1.2rem;
+    top: 30%;
+    left: 17%;
+    font-size: .9rem;
     font-weight: 700;
     color: white;
+    flex-wrap: wrap;
 }
 
 .top-curve1>h5{
     position: absolute;
-    top: 40%;
-    left: 14%;
+    top: 55%;
+    left: 12%;
     font-size: .6rem;
     font-weight: 500;
     color: white;
 }
 
 .medi-card1>h4{
-    padding-top: 5px;
-    margin-left: 70px;
-    font-size: .8rem;
+    text-align: center;
+    font-size: .6rem;
     font-weight: 600;
     font-family: sans-serif;
     color: red;
+}
+
+
+.selectPlease{
+    position: absolute;
+    height: 22rem; 
+    left: 40%;
+
+}
+.selectPlease>img{
+    height: 250px;
+    margin-left: 10%;
+    margin-bottom: 40px;
+}
+.selectPlease>h2{
+    color: red;
+    margin-top: 30px;
+    text-align: center;
 }

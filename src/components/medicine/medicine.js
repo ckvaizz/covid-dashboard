@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './medicine.css';
 import Axios from 'axios'
+import Corona from '../../images/coro.gif'
 
 const Medicine = () =>{ 
     const [apiData,setApiData] = useState([])
@@ -17,7 +18,7 @@ const Medicine = () =>{
                    setAllStates(arr=>[...arr,d.state])
                 //    else console.log(existing)
                 
-                
+                 
                     
         }) )
        // setAllStates([...new Set(allStates)])
@@ -75,7 +76,10 @@ const Medicine = () =>{
                                 
                             
                             
-                        }):''
+                        }): <div className="selectPlease"> 
+                        <h2>Please select state .. </h2>
+                                    <img src={Corona} alt=""/>
+                     </div>
                     }
                 
 
