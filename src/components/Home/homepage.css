@@ -53,9 +53,9 @@
     width: 220px;
     background-color: rgb(255, 255, 255);
     font-size: 2rem;
-   padding: auto;
-  text-align: center;
-  padding: 10px;
+    padding: auto;
+    text-align: center;
+    padding: 10px;
     box-shadow:2px 2px 4px 1px rgba(0,0,0,0.3);
     font-weight: 545;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -319,7 +319,7 @@ font-family: monospace;
         left: 20px;
         width: 100%;
     }
-    .H-btn{
+    .H-btn{ 
         position: absolute;
         top: 39rem;
         display:flex;

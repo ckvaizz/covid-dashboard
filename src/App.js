@@ -20,7 +20,11 @@ function App() {
      <Helmet>
        <title>Covid-dashboard</title>
        <meta name='description' content='Get all leatest new about covid-19 ' />
-     <meta name='keyword' content='Covid status,corona hospitals ,corona medicines , corona cases,all states in india ,latest covid update' />
+     <meta name='keyword' content='Covid status,corona hospitals ,corona medicines ,
+      corona cases,all states in india ,latest covid update ,covid-19 ,corona daily updates,corona,
+      world health organisation ,who ,covin,covid vaccine,india covid,covid kerala,covid tamilnadu,
+      covid karnataka,covid delhi,covid punjab,covid gujarat,covid maharashtra,
+      present covid situation,covid recovery' />
      </Helmet>
       <Switch>
         <Route path="/" exact>
