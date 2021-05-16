@@ -98,6 +98,7 @@
     margin-top: 10px;
     text-align: center;
     font-size: 1rem;
+    text-align: center;
     
 }
 
@@ -105,6 +106,7 @@
     margin-top: 15px ;
     text-align: left;
     font-size: .7rem;
+    text-align: center;
 }
 
 .selectPlease{
@@ -124,5 +126,33 @@
     text-align: center;
 }
 
+@media only screen and (max-width:842px){
+    .hos-card{
+        width: 100%;
+    }
+    .card1{
+        width: 40%;
+    }
+    .hos-card>h5{
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+    .card1>h3{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .card1>h4{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .card1>h6{
+        font-size: 1.4rem;
+        text-align: center;
+        margin-top: 50px;
+    }
 
+
+}
 

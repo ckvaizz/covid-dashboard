@@ -5,6 +5,7 @@ import Axios from 'axios'
 import MapImg from "../../images/map-gif.gif"
 import CoronaGif from "../../images/corona-gif.gif"
 import {Redirect,useHistory} from 'react-router-dom';
+import {Helmet} from 'react-helmet'
  const Homepage = () => {
     //To store user's state and districts
     const [Userdata,setUserData] = useState("")
@@ -14,7 +15,7 @@ import {Redirect,useHistory} from 'react-router-dom';
     const [apiData,setApiData] = useState([])
     const [filtered,SetFiltered] = useState([])
     const [districts,setDistricts] = useState([])
-    const [toDayUpdate,setTodayUpdate]= useState(false)
+   
     const [stateCode,setStateCode] = useState('')
     const [AllStates,setAllstates]=useState([])
  
@@ -26,14 +27,16 @@ import {Redirect,useHistory} from 'react-router-dom';
     }
     
     
-        useEffect(()=>{
-            Axios.get(' https://api.covid19india.org/v4/min/data.min.json').then(resp=>{
-                console.log(resp.data)
-                setApiData(resp.data)
-            getLocalUserdata();
-            setAllstates(Object.keys(allStateOBj))
-
+    
+        useEffect(async()=>{
+           await  Axios.get(' https://api.covid19india.org/v4/min/data.min.json').then( resp=>{
+                        setApiData(resp.data)
             })
+
+             getLocalUserdata();
+            setAllstates(Object.keys(allStateOBj))
+           
+           
         },[])
         
         
@@ -45,7 +48,7 @@ import {Redirect,useHistory} from 'react-router-dom';
                 setUserData( JSON.parse(localStorage.getItem("stateData")))
                 setShowingDiv('dis')
                 setStateCode(allStateOBj[JSON.parse(localStorage.getItem("stateData")).state])
-                setTodayStatus()
+                
             }
         }
         //
@@ -70,7 +73,7 @@ import {Redirect,useHistory} from 'react-router-dom';
             setUserData({state:SelectedUserState,district:district})
             setShowingDiv("dis")
             setStateCode(allStateOBj[JSON.parse(localStorage.getItem("stateData")).state])
-            setTodayStatus()
+           // setTodayStatus()
             
         }
         const divNextHandler=()=>{
@@ -78,16 +81,9 @@ import {Redirect,useHistory} from 'react-router-dom';
             else if(showingDiv=== 'sta') setShowingDiv('tod')
             else setShowingDiv('dis')
         }
-       function setTodayStatus(){
-           let today = new Date().toDateString()
-           let updatedDay = apiData[stateCode]?new Date(apiData[stateCode].meta.last_updated).toDateString():setTimeout(()=>{setTodayStatus()},2000)
-           
-           if(today===updatedDay) return setTodayUpdate(true)
-            
-           
-       }
+      
        
-       
+        
         
         
      
@@ -98,6 +94,10 @@ import {Redirect,useHistory} from 'react-router-dom';
         <>
        
        <div className="H-main">
+       <Helmet>
+                <title>Covid-dashboard</title>
+                <meta name='description' content='All the news about corona daily updates' />
+            </Helmet>
            <div className="H-img">
         <img src={Banner} alt=""/>
           <div className="H-img-text">
@@ -109,24 +109,24 @@ import {Redirect,useHistory} from 'react-router-dom';
         
            </div>
            <div className="H-dailyUpdate">
-               <div className={Userdata!=""?"H-nextbtn":"div-disable"} onClick={divNextHandler}> next  &#10145;</div>
+               <div className={Userdata!==""?"H-nextbtn":"div-disable"} onClick={divNextHandler}> next  &#10145;</div>
            {/* H-selectState */}
-            <div className={Userdata == ""?" H-selectState":"div-disable"}>
+            <div className={Userdata === ""?" H-selectState":"div-disable"}>
                 <span>
-                <input type="text" name="state" id="" onChange={inputStateHandler} autoComplete="off" value={SelectedUserState!=""?SelectedUserState:null} placeholder="Select Your State"/>
+                <input type="text" name="state" id="" onChange={inputStateHandler} autoComplete="off" value={SelectedUserState!==""?SelectedUserState:null} placeholder="Select Your State"/>
                 <input type="text"  name="district" onClick={DisArrayHandler} autoComplete="off" placeholder="Select Your District"/>
                 </span>
-                <div className={searchState.length==0 ?"div-disable":"H-searchreslt"}>
-                   {searchState.length != 0 ?
+                <div className={searchState.length===0 ?"div-disable":"H-searchreslt"}>
+                   {searchState.length !== 0 ?
                    searchState.map(d=>{
                       return  <h3 onClick={()=> selectedStateHandler(d) }>{d}</h3>
                    }):''
 
                 }
                 </div>
-                <div className={districts.length !=0 ?"H-searchdistrict":"div-disable"}>
+                <div className={districts.length !==0 ?"H-searchdistrict":"div-disable"}>
                    {
-                       districts.length != 0 ?
+                       districts.length !== 0 ?
                        districts.map(d=> {
                            return <h3 onClick={()=>selecteddistrictHandler(d)}>{d}</h3>
                        } ):''
@@ -150,7 +150,7 @@ import {Redirect,useHistory} from 'react-router-dom';
                     <div>
                        <h3>Confirmed</h3>
                     </div>
-                    {/* {console.log(apiData[stateCode]?apiData[stateCode].districts[Userdata.district]:'',"koii")}  */}
+                    {console.log(apiData[stateCode]?apiData[stateCode]:'',)} 
                     <h5>{apiData[stateCode]?apiData[stateCode].districts[Userdata.district].total.confirmed:''}.</h5>
                     </div>
                     <div className="H-cardRecoverd">
@@ -189,11 +189,11 @@ import {Redirect,useHistory} from 'react-router-dom';
                 </div>
             </div>
             {/* H-dailycase */} 
-            {console.log(apiData[stateCode]?apiData[stateCode].districts:'k')}
+           
             {apiData[stateCode] && apiData[stateCode].districts[Userdata.district].delta ?
             <div className={showingDiv === "tod"?"H-dailycase":"div-disable"}>
-                <h1>{toDayUpdate?"Today":"Yesterday"}-cases</h1>
-                   <p style={{color:'red'}}>Todays-cases will update soon..</p> 
+                <h1>Latest-updated-cases</h1>
+                  
                 <div className="H-dailydistrict">
                     <h4>{Userdata?Userdata.district:''}</h4>
                     
@@ -219,10 +219,10 @@ import {Redirect,useHistory} from 'react-router-dom';
             </div>
         
            <div className="H-btn">
-           <div className="H-btn-hos" onClick={ () => history.push("/hospital")}><p>Hospital</p></div>
-           <div className="H-btn-med" onClick={ () => history.push("/medicine")}><p>Medicine</p></div>
-           <div className="H-btn-amb" onClick={ () => history.push("/ambulance")}><p>Ambulance</p></div>
-           <div className="H-btn-mr" onClick={ () => history.push("/more")}><p>More</p></div>
+           <div className="H-btn-hos" onClick={ () => history.push("/hospital")}><p>Hospitals</p></div>
+           <div className="H-btn-med" onClick={ () => history.push("/medicine")}><p>Medicines</p></div>
+           <div className="H-btn-amb" onClick={ () => history.push("/ambulance")}><p>Ambulances</p></div>
+           <div className="H-btn-mr" onClick={ () => history.push("/more")}><p>All states</p></div>
        
            </div>
            

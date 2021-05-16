@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import './more.css';
 import Axios from 'axios'
 import Corona from '../../images/coro.gif'
+import {Helmet} from 'react-helmet'
 const Moredata = () => {
-   const [userData,setuserData] = useState({})
+ 
    const [apiData,setApiData] = useState({})
    const [allStates,setAllStates]= useState([])
    const [stateCode,setStateCode] = useState('')
-   const [filteredData,setFilteredData] = useState([])
+   
    const [selectedState,setSelectedState] = useState('')
    const [districts,setDistricts] = useState([])
    const [selectToday,setSelectToday] = useState(false)
@@ -24,26 +25,21 @@ const Moredata = () => {
                 setApiData(resp.data)
             
             setAllStates(Object.keys(allStateOBj))
-            getLocaldata()
+           
             })
    },[])
 
 
-   function getLocaldata(){
-      if(localStorage.getItem("stateData") !== null){
-         setuserData( JSON.parse(localStorage.getItem("stateData")))
-         
-      } 
-   }
+   
 
    const selectionHandler = e =>{
-      if(e.target.value === '') return setDistricts([''])
+      if(e.target.value === '') return setDistricts([])
       setSelectedState(e.target.value)
          setStateCode(allStateOBj[e.target.value])
      setDistricts(Object.keys(apiData[allStateOBj[e.target.value]].districts))
    }
    const changeListdata=()=>{
-      if(selectedState=='') return alert('Select state first')
+      if(selectedState==='') return alert('Select state first')
      if(apiData[stateCode].delta) setSelectToday(true)
      else alert("Todays news not updated ... ")
 
@@ -51,6 +47,10 @@ const Moredata = () => {
    }
     return(
         <div className="more-main">
+           <Helmet>
+                <title>All states</title>
+                <meta name='description' content='All the  corona updates sorted by states and districts' />
+            </Helmet>
             <h2>Detailed List</h2>
             <select onChange={selectionHandler} >
                     <option value='' >Select state</option>

@@ -113,3 +113,13 @@ tr:nth-child(even){
     margin-top: 30px;
     text-align: center;
 }
+@media only screen and (max-width:842px){
+    .more-SelectToday{
+        top: 28%;
+        left: 5%;
+    }
+    .more-table{
+        top: 35%;
+        height: 40rem;
+    }
+}
