@@ -15,7 +15,7 @@ import {Helmet} from 'react-helmet'
     const [apiData,setApiData] = useState([])
     const [filtered,SetFiltered] = useState([])
     const [districts,setDistricts] = useState([])
-    const [toDayUpdate,setTodayUpdate]= useState(false)
+   
     const [stateCode,setStateCode] = useState('')
     const [AllStates,setAllstates]=useState([])
  
@@ -109,24 +109,24 @@ import {Helmet} from 'react-helmet'
         
            </div>
            <div className="H-dailyUpdate">
-               <div className={Userdata!=""?"H-nextbtn":"div-disable"} onClick={divNextHandler}> next  &#10145;</div>
+               <div className={Userdata!==""?"H-nextbtn":"div-disable"} onClick={divNextHandler}> next  &#10145;</div>
            {/* H-selectState */}
-            <div className={Userdata == ""?" H-selectState":"div-disable"}>
+            <div className={Userdata === ""?" H-selectState":"div-disable"}>
                 <span>
-                <input type="text" name="state" id="" onChange={inputStateHandler} autoComplete="off" value={SelectedUserState!=""?SelectedUserState:null} placeholder="Select Your State"/>
+                <input type="text" name="state" id="" onChange={inputStateHandler} autoComplete="off" value={SelectedUserState!==""?SelectedUserState:null} placeholder="Select Your State"/>
                 <input type="text"  name="district" onClick={DisArrayHandler} autoComplete="off" placeholder="Select Your District"/>
                 </span>
-                <div className={searchState.length==0 ?"div-disable":"H-searchreslt"}>
-                   {searchState.length != 0 ?
+                <div className={searchState.length===0 ?"div-disable":"H-searchreslt"}>
+                   {searchState.length !== 0 ?
                    searchState.map(d=>{
                       return  <h3 onClick={()=> selectedStateHandler(d) }>{d}</h3>
                    }):''
 
                 }
                 </div>
-                <div className={districts.length !=0 ?"H-searchdistrict":"div-disable"}>
+                <div className={districts.length !==0 ?"H-searchdistrict":"div-disable"}>
                    {
-                       districts.length != 0 ?
+                       districts.length !== 0 ?
                        districts.map(d=> {
                            return <h3 onClick={()=>selecteddistrictHandler(d)}>{d}</h3>
                        } ):''

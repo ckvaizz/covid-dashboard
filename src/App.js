@@ -14,7 +14,7 @@ function App() {
   return (
     <div >
      
-     <Footer/>
+     
      <Router>
      <Navbar />
      <Helmet>
