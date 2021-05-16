@@ -33,7 +33,10 @@ const Moredata = () => {
    
 
    const selectionHandler = e =>{
-      if(e.target.value === '') return setDistricts([])
+      if(e.target.value === '') {
+         setSelectedState('')
+       return  setDistricts([])
+      }
       setSelectedState(e.target.value)
          setStateCode(allStateOBj[e.target.value])
      setDistricts(Object.keys(apiData[allStateOBj[e.target.value]].districts))

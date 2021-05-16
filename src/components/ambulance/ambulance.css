@@ -41,7 +41,7 @@
 
 
 
-/* images*/
+
 
 
 
@@ -76,7 +76,7 @@
     margin-top: 30px;
     margin-left: 8.5%;
     height: 53vh;
-    width: 23vw;
+    width: 310px;
     background-color:transparent;
     box-shadow:2px 2px 4px 1px rgba(0,0,0,0.8);
     
@@ -89,29 +89,30 @@
     font-weight: 500;
     font-family: sans-serif;
     margin-left: 3px;
+    padding-top: 25px;
 }
 
 .amb-sec1{
    
     height: 25vh;
-    width: 23vw;
+    width: 100%;
     background-color: teal;
 }
 .amb-sec1>h3{
-    padding-top: 3px;
-    margin-left: 50px;
+   text-align: center;
     font-size: 1rem;
     font-weight: 600;
     font-family: sans-serif;
     color: rgb(2, 2, 2);
+    padding-top: 25px;
 }
 .amb-sec1>h4{
-    padding-top: 3px;
-    margin-left: 30px;
+    padding-top: 15px;
     font-size: .9rem;
     font-weight: 600;
     font-family: sans-serif;
     color: rgb(12, 12, 12);
+    text-align: center;
 }
 
 .selectPlease{
@@ -129,4 +130,29 @@
     color: red;
     margin-top: 30px;
     text-align: center;
+}
+
+@media only screen and (max-width:842px){
+    .head-select{
+        top: 24%;
+    }
+    
+    .amb-card{
+        width: 80%;
+       
+    }
+    .amb-card>h4{
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .amb-sec1>h3{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .amb-sec1>h4{
+        font-size: 2.3rem;
+        text-align: center;
+    }
+
 }

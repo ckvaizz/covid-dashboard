@@ -81,33 +81,43 @@
     width: 25vw;
     position: relative;
     background-color: rgb(207, 13, 13);
+ 
+    
+    padding-top: 40px;
+    padding-left: 70px;
 }
 
 .top-curve1>h2{
-    position: absolute;
-    top: 30%;
-    left: 17%;
-    font-size: .9rem;
+    
+   
+    
+    font-size: 1rem;
     font-weight: 700;
     color: white;
-    flex-wrap: wrap;
+    width: 200px;
+    
+    overflow-wrap: break-word;
+    text-align: center;
 }
 
 .top-curve1>h5{
-    position: absolute;
-    top: 55%;
-    left: 12%;
-    font-size: .6rem;
+   
+    margin-top: 20px;
+    width: 200px;
+    overflow-wrap: break-word;
+    font-size: .9rem;
     font-weight: 500;
     color: white;
+    text-align: center;
 }
 
 .medi-card1>h4{
     text-align: center;
-    font-size: .6rem;
+    font-size: .8rem;
     font-weight: 600;
     font-family: sans-serif;
     color: red;
+    margin-top: 10px;
 }
 
 
@@ -126,4 +136,37 @@
     color: red;
     margin-top: 30px;
     text-align: center;
+}
+@media only screen and (max-width:842px){
+    .med-head-select{
+        top: 20%;
+
+    }
+    .medi-card1{
+        width: 90%;
+    }
+    .top-curve1{
+        width: 100%;
+        padding-left: 20px;
+        text-align: center;
+    }
+    .top-curve1>h2{
+        font-size: 2.1rem;
+        width: 300px;
+        
+        margin-left: 85px;
+        overflow-wrap: break-word;
+        text-align: center;
+    }
+    .top-curve1>h5{
+        font-size: 1.5rem;
+        width: 500px;
+    }
+    .medi-card1>h4{
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+    .medi-card-main{
+        height: 65vh;
+    }
 }
