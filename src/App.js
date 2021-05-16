@@ -9,7 +9,7 @@ import {BrowserRouter as Router,
 Switch,
 Route,
 Redirect,} from "react-router-dom";
-
+import {Helmet} from 'react-helmet'
 function App() {
   return (
     <div >
@@ -17,6 +17,11 @@ function App() {
      <Footer/>
      <Router>
      <Navbar />
+     <Helmet>
+       <title>Covid-dashboard</title>
+       <meta name='description' content='Get all leatest new about covid-19 ' />
+     <meta name='keyword' content='Covid status,corona hospitals ,corona medicines , corona cases,all states in india ,latest covid update' />
+     </Helmet>
       <Switch>
         <Route path="/" exact>
          <Homepage />

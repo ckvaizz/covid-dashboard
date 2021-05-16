@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './medicine.css';
 import Axios from 'axios'
 import Corona from '../../images/coro.gif'
-
+import {Helmet} from 'react-helmet'
 const Medicine = () =>{ 
     const [apiData,setApiData] = useState([])
     const [allStates,setAllStates] = useState([])
@@ -35,6 +35,10 @@ const Medicine = () =>{
     }
     return(
         <div className="med-main">
+            <Helmet>
+                <title>Medicine shops</title>
+                <meta name='description' content='All the news about corona Medicine shops' />
+            </Helmet>
             <div className="med-head-select">
             <h2>Medicine</h2>
             <select onChange={stateChangeHandler}> 

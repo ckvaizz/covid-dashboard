@@ -5,6 +5,7 @@ import Axios from 'axios'
 import MapImg from "../../images/map-gif.gif"
 import CoronaGif from "../../images/corona-gif.gif"
 import {Redirect,useHistory} from 'react-router-dom';
+import {Helmet} from 'react-helmet'
  const Homepage = () => {
     //To store user's state and districts
     const [Userdata,setUserData] = useState("")
@@ -93,6 +94,10 @@ import {Redirect,useHistory} from 'react-router-dom';
         <>
        
        <div className="H-main">
+       <Helmet>
+                <title>Covid-dashboard</title>
+                <meta name='description' content='All the news about corona daily updates' />
+            </Helmet>
            <div className="H-img">
         <img src={Banner} alt=""/>
           <div className="H-img-text">
@@ -214,10 +219,10 @@ import {Redirect,useHistory} from 'react-router-dom';
             </div>
         
            <div className="H-btn">
-           <div className="H-btn-hos" onClick={ () => history.push("/hospital")}><p>Hospital</p></div>
-           <div className="H-btn-med" onClick={ () => history.push("/medicine")}><p>Medicine</p></div>
-           <div className="H-btn-amb" onClick={ () => history.push("/ambulance")}><p>Ambulance</p></div>
-           <div className="H-btn-mr" onClick={ () => history.push("/more")}><p>More</p></div>
+           <div className="H-btn-hos" onClick={ () => history.push("/hospital")}><p>Hospitals</p></div>
+           <div className="H-btn-med" onClick={ () => history.push("/medicine")}><p>Medicines</p></div>
+           <div className="H-btn-amb" onClick={ () => history.push("/ambulance")}><p>Ambulances</p></div>
+           <div className="H-btn-mr" onClick={ () => history.push("/more")}><p>All states</p></div>
        
            </div>
            

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './more.css';
 import Axios from 'axios'
 import Corona from '../../images/coro.gif'
+import {Helmet} from 'react-helmet'
 const Moredata = () => {
    const [userData,setuserData] = useState({})
    const [apiData,setApiData] = useState({})
@@ -51,6 +52,10 @@ const Moredata = () => {
    }
     return(
         <div className="more-main">
+           <Helmet>
+                <title>All states</title>
+                <meta name='description' content='All the  corona updates sorted by states and districts' />
+            </Helmet>
             <h2>Detailed List</h2>
             <select onChange={selectionHandler} >
                     <option value='' >Select state</option>
