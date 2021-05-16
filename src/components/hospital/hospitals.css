@@ -131,28 +131,45 @@
         width: 100%;
     }
     .card1{
-        width: 40%;
+        width: 45%;
     }
     .hos-card>h5{
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 300;
         margin-top: 10px;
+        text-align: left;
+        margin-left: 47%;
+        overflow-wrap: break-word;
+
     }
     .card1>h3{
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         text-align: center;
     }
     .card1>h4{
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         text-align: center;
         margin-top: 20px;
     }
     .card1>h6{
-        font-size: 1.4rem;
+        font-size: 1rem;
         text-align: center;
         margin-top: 50px;
     }
+    .selectPlease{
+    position: absolute;
+    align-content: left;
+       margin-left: -80px;
+        
+    }
+    .hos-card-main{
+        height: 62vh;
+    }
 
+.hospital-main>h2{
+    top: 17%;
+    left: 30%;
+}
 
 }
 

@@ -72,7 +72,7 @@ const Ambulance = () => {
                             
                             </div>
 
-                            : console.log('no')
+                            : ''
                         
                             )
                                 

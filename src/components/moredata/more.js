@@ -21,7 +21,7 @@ const Moredata = () => {
 
    useEffect(()=>{
       Axios.get(' https://api.covid19india.org/v4/min/data.min.json').then(resp=>{
-                console.log(resp.data)
+               
                 setApiData(resp.data)
             
             setAllStates(Object.keys(allStateOBj))
@@ -43,7 +43,8 @@ const Moredata = () => {
    }
    const changeListdata=()=>{
       if(selectedState==='') return alert('Select state first')
-     if(apiData[stateCode].delta) setSelectToday(true)
+     
+     if(apiData[stateCode].delta.confirmed) setSelectToday(true)
      else alert("Todays news not updated ... ")
 
      
@@ -85,11 +86,12 @@ const Moredata = () => {
                      return(
                         <tr>
                         <td>{data}</td>
-                        <td>{selectToday?apiData[stateCode].districts[data].delta.confirmed:apiData[stateCode].districts[data].total.confirmed}</td>
-                        <td>{selectToday?apiData[stateCode].districts[data].delta.recovered:apiData[stateCode].districts[data].total.recovered}</td>
+                        
+                        <td>{selectToday?apiData[stateCode].districts[data].delta?apiData[stateCode].districts[data].delta.confirmed:'':apiData[stateCode].districts[data].total.confirmed}</td>
+                        <td>{selectToday?apiData[stateCode].districts[data].delta?apiData[stateCode].districts[data].delta.recovered:'':apiData[stateCode].districts[data].total.recovered}</td>
                         <td>{selectToday?"Not available":apiData[stateCode].districts[data].total.tested?apiData[stateCode].districts[data].total.tested:'Not in collection'}</td>
                         <td>{selectToday?"Not available":apiData[stateCode].districts[data].total.vaccinated?apiData[stateCode].districts[data].total.vaccinated:'Not in collection'}</td>
-                        <td>{selectToday?apiData[stateCode].districts[data].delta.deceased:apiData[stateCode].districts[data].total.deceased}</td>
+                        <td>{selectToday?apiData[stateCode].districts[data].delta?apiData[stateCode].districts[data].delta.deceased:'':apiData[stateCode].districts[data].total.deceased}</td>
                      </tr>
                      )
                   })

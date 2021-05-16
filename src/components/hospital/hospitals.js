@@ -79,7 +79,7 @@ const Hospitalpage = () => {
                      </div>
                  </div>
                                 
-                            : console.log('no')
+                            : ''
                         
                         )
                             

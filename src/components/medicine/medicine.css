@@ -151,22 +151,25 @@
         text-align: center;
     }
     .top-curve1>h2{
-        font-size: 2.1rem;
+        font-size: 1.5rem;
         width: 300px;
-        
-        margin-left: 85px;
+        margin-top: 30px;
+        margin-left: 5px;
         overflow-wrap: break-word;
         text-align: center;
     }
     .top-curve1>h5{
-        font-size: 1.5rem;
-        width: 500px;
+        font-size: 1.1rem;
+        width: 300px;
+        margin-left: 0px;
     }
     .medi-card1>h4{
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin-top: 10px;
     }
-    .medi-card-main{
-        height: 65vh;
+    
+    .med-head-select>h2{
+        margin-top: -40px;
+        margin-left: -30px;
     }
 }

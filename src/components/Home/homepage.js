@@ -150,7 +150,7 @@ import {Helmet} from 'react-helmet'
                     <div>
                        <h3>Confirmed</h3>
                     </div>
-                    {console.log(apiData[stateCode]?apiData[stateCode]:'',)} 
+                    {/* {console.log(apiData[stateCode]?apiData[stateCode]:'',)}  */}
                     <h5>{apiData[stateCode]?apiData[stateCode].districts[Userdata.district].total.confirmed:''}.</h5>
                     </div>
                     <div className="H-cardRecoverd">

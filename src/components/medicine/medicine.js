@@ -74,7 +74,7 @@ const Medicine = () =>{
                     <h4>{d.emailId}</h4>
                     <h4>{d.phone1}</h4>
                 </div>
-                            : console.log('no')
+                            : ''
                         
                             )
                                 

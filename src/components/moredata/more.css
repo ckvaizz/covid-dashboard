@@ -121,5 +121,14 @@ tr:nth-child(even){
     .more-table{
         top: 35%;
         height: 40rem;
+        width:100%;
+    }
+    th, td{
+        padding: 3;
+        font-size: .6rem;
+    }
+    .more-main>h2{
+        margin-top: -30px;
+        margin-left: -50px;
     }
 }
