@@ -101,10 +101,8 @@
     display: flex;
     justify-content: center;
 }
-.H-selectState>span>input:focus{
-    outline: 0;
-}
-.H-selectState>span>input{
+
+.H-selectState>span>select{
     font-weight: 900;
     text-align: center;
     margin: 5px;
@@ -355,7 +353,7 @@ font-family: monospace;
     .H-dailyUpdate{
         position: absolute;
         top: 22rem;
-        left: 20px;
+        left: 10px;
         width: 100%;
        
     }

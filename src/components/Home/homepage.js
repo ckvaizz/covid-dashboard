@@ -52,13 +52,14 @@ import {Helmet} from 'react-helmet'
             }
         }
         //
-        const inputStateHandler= e =>{
-            if(e.target.value === "") return setSearchState([])
-             setSearchState(AllStates.filter(s=>s.includes(e.target.value)))
+        // const inputStateHandler= e =>{
+        //     if(e.target.value === "") return setSearchState([])
+        //      setSearchState(AllStates.filter(s=>s.includes(e.target.value)))
             
-        }
+        // }
         //
         const selectedStateHandler= state=>{
+            if(state ==="") return setSearchState([])
             setSelecteduserState(state)
             searchState.length=0;
                SetFiltered(apiData[allStateOBj[state]])
@@ -69,6 +70,7 @@ import {Helmet} from 'react-helmet'
             setDistricts(Object.keys(filtered.districts))
         }
         const selecteddistrictHandler=district=>{
+            if(district === "") return
             localStorage.setItem("stateData",JSON.stringify({state:SelectedUserState,district:district}))
             setUserData({state:SelectedUserState,district:district})
             setShowingDiv("dis")
@@ -113,10 +115,29 @@ import {Helmet} from 'react-helmet'
            {/* H-selectState */}
             <div className={Userdata === ""?" H-selectState":"div-disable"}>
                 <span>
-                <input type="text" name="state" id="" onChange={inputStateHandler} autoComplete="off" value={SelectedUserState!==""?SelectedUserState:null} placeholder="Select Your State"/>
-                <input type="text"  name="district" onClick={DisArrayHandler} autoComplete="off" placeholder="Select Your District"/>
+                    <select name="state" onChange={(e)=>selectedStateHandler(e.target.value)} id="">
+                        <option value="">States</option>
+                        {
+                           // console.log(AllStates)
+                            AllStates?AllStates.map((d,k)=>{
+                              return  <option key={k} value={d}>{d}</option>
+                            }):''
+                        }
+                    </select>
+                    <select onChange={(e)=>selecteddistrictHandler(e.target.value)} name="" id="" onClick={DisArrayHandler}>
+                    <option value="">Districts</option>
+                        {
+                       districts.length !== 0 ?
+                       districts.map((d,k)=> {
+                           return <option key={k} value={d}>{d}</option>
+                       } ):''
+                   }
+                    </select>
+                {/* <input type="text" name="state" id="" onChange={inputStateHandler} autoComplete="off" value={SelectedUserState!==""?SelectedUserState:null} placeholder="Select Your State"/>
+                <input type="text"  name="district" onClick={DisArrayHandler} autoComplete="off" placeholder="Select Your District"/> */}
                 </span>
-                <div className={searchState.length===0 ?"div-disable":"H-searchreslt"}>
+
+                {/* <div className={searchState.length===0 ?"div-disable":"H-searchreslt"}>
                    {searchState.length !== 0 ?
                    searchState.map(d=>{
                       return  <h3 onClick={()=> selectedStateHandler(d) }>{d}</h3>
@@ -131,7 +152,7 @@ import {Helmet} from 'react-helmet'
                            return <h3 onClick={()=>selecteddistrictHandler(d)}>{d}</h3>
                        } ):''
                    }
-                </div>
+                </div> */}
                 <h1>
                     Please select your state and district to continue.
                 </h1>
